@@ -1,20 +1,11 @@
 # Ritvik Remesh Portfolio
 
-This portfolio is served by Flask. The original Flutter web source was not present in the repository; the previous deployment contained only the compiled Flutter output. The site has been rebuilt as a Flask application using the existing profile and project images. The dependencies support Python 3.7 and newer.
+This is a static portfolio built with HTML, CSS, and JavaScript. Open `index.html` directly in a browser to preview it.
 
-## Run locally
+For a local HTTP preview, run `python -m http.server 8000 --bind 127.0.0.1` from the repository root and open <http://127.0.0.1:8000>. Python is optional.
 
-```powershell
-py -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-python app.py
-```
+Project previews, repository search, navigation, and animations run in the browser. The contact form opens WhatsApp with a prefilled message for the visitor to send.
 
-Open <http://127.0.0.1:5000>.
+## GitHub Pages
 
-The contact form opens WhatsApp with the entered details; it does not store or send form data to this server.
-
-## Deployment
-
-Deploy this app to a Python-capable host using `app:app` as the WSGI entry point. GitHub Pages cannot run Flask applications.
+In the repository's **Settings → Pages**, choose **Deploy from a branch**, select **main** and **/ (root)**, then save. GitHub Pages serves the root `index.html` and its assets directly.
